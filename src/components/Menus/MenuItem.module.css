@@ -1,0 +1,68 @@
+.foodItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.partOne {
+  width: 80%;
+}
+.partTwo {
+  width: 20%;
+}
+.foodName {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nonVeg {
+  width: fit-content;
+  padding: 5px;
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+}
+.veg {
+  width: fit-content;
+  padding: 5px;
+  background-color: green;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.priceWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 600;
+}
+.input {
+  border: none;
+  outline: 0;
+  padding: 5px;
+}
+
+.btnAdd {
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btnRemove {
+  background-color: red;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}

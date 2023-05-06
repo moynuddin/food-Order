@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: brown;
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.link {
+  font-size: 28px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.cartWrapper:hover {
+  filter: brightness(80%);
+}
+
+.badge {
+  background-color: rgb(156, 156, 162);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+}

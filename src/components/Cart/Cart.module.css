@@ -1,0 +1,39 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.nonVeg {
+  width: fit-content;
+  background-color: red;
+  color: #fff !important;
+  padding: 6px;
+  border-radius: 5px;
+}
+.veg {
+  width: fit-content;
+  background-color: green;
+  color: #fff !important;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priceWrapper > span {
+  font-weight: 500;
+}
