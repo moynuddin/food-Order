@@ -6,6 +6,7 @@ const MenuList = ({
   addCartHandler,
   removeCartHandler,
   handleInputChange,
+  handleInputOnBlur,
   isAdded,
 }) => {
   return (
@@ -18,6 +19,7 @@ const MenuList = ({
             addCartHandler={addCartHandler}
             removeCartHandler={removeCartHandler}
             handleInputChange={handleInputChange}
+            handleInputOnBlur={handleInputOnBlur}
             isAdded={isAdded}
           />
         ))}

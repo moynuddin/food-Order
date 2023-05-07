@@ -14,6 +14,7 @@ const Entry = () => {
     setAddOrder((prevState) => [...prevState, { ...product, quantity }]);
     if (product.id === id) {
       setIsAdded((prevState) => [...prevState, id]);
+      setQuantity(1);
     }
   };
 
@@ -35,9 +36,13 @@ const Entry = () => {
   };
 
   const handleInputChange = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log("Input changed", e.target.value);
     setQuantity(e.target.value);
+  };
+  const handleInputOnBlur = () => {
+    console.log("Out of focus");
+    // setQuantity(1);
   };
 
   return (
@@ -49,6 +54,7 @@ const Entry = () => {
         addCartHandler={addCartHandler}
         removeCartHandler={removeCartHandler}
         handleInputChange={handleInputChange}
+        handleInputOnBlur={handleInputOnBlur}
         isAdded={isAdded}
       />
     </div>

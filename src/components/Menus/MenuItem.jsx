@@ -5,6 +5,7 @@ const MenuItem = ({
   addCartHandler,
   removeCartHandler,
   handleInputChange,
+  handleInputOnBlur,
   isAdded,
 }) => {
   return (
@@ -20,7 +21,7 @@ const MenuItem = ({
         </p>
       </div>
       <div className={classes.partTwo}>
-        <div className={classes.priceWrapper}>
+        <div className={classes.priceWrapper} onBlur={handleInputOnBlur}>
           <p className={classes.price}>${product.price}</p>
           <input
             className={classes.input}
