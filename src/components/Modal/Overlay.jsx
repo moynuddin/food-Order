@@ -17,7 +17,9 @@ const Overlay = ({ onModal, addOrder }) => {
             ))}
           </div>
         )}
-        {<p className={classes.empty}>Your cart is empty!</p>}
+        {addOrder.length < 1 && (
+          <p className={classes.empty}>Your cart is empty!</p>
+        )}
       </section>
 
       <div className={classes.overlay}></div>
