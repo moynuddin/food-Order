@@ -10,11 +10,14 @@ const Overlay = ({ onModal, addOrder }) => {
             ⨉
           </button>
         </div>
-        <div>
-          {addOrder.map((order) => (
-            <Cart key={order.id} cartOrder={order} />
-          ))}
-        </div>
+        {addOrder.length > 0 && (
+          <div>
+            {addOrder.map((order) => (
+              <Cart key={order.id} cartOrder={order} />
+            ))}
+          </div>
+        )}
+        {<p className={classes.empty}>Your cart is empty!</p>}
       </section>
 
       <div className={classes.overlay}></div>

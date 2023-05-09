@@ -79,3 +79,7 @@
 .hidden {
   display: none;
 }
+
+.empty {
+  text-align: center;
+}
